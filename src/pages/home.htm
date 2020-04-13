@@ -1,0 +1,19 @@
+title = "Demonstration"
+url = "/"
+layout = "default"
+==
+<div class="flex flex-col sm:items-start sm:text-left">
+    <h1 class="text-6xl text-center">TailwindCSS Boilerplate Theme</h1>
+    
+    <div x-data="{ open: false }">
+        <button @click="open = true">Open Dropdown</button>
+    
+        <ul
+            x-show="open"
+            @click.away="open = false"
+        >
+            Dropdown Body
+        </ul>
+    </div>
+</div>
+
